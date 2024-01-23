@@ -24,7 +24,7 @@ Fuentes:
 
 # Importar paquetes de Python
 """
-
+# !pip install shap
 import pandas as pd
 import numpy as np
 
@@ -38,8 +38,8 @@ from xgboost import plot_importance
 
 """# Preparar dataset"""
 
-!curl --output clase_1_explicacion_train.csv https://raw.githubusercontent.com/JuanCarlosCS19/ML_Toulouse_ENE_2024/main/clase_1_explicacion_train.csv
-!curl --output clase_1_explicacion_test.csv https://raw.githubusercontent.com/JuanCarlosCS19/ML_Toulouse_ENE_2024/main/clase_1_explicacion_test.csv
+#!curl --output clase_1_explicacion_train.csv https://raw.githubusercontent.com/JuanCarlosCS19/ML_Toulouse_ENE_2024/main/clase_1_explicacion_train.csv
+#!curl --output clase_1_explicacion_test.csv https://raw.githubusercontent.com/JuanCarlosCS19/ML_Toulouse_ENE_2024/main/clase_1_explicacion_test.csv
 
 # train_df = pd.read_csv('/content/clase_1_explicacion_train.csv')
 train_df = pd.read_csv('https://raw.githubusercontent.com/JuanCarlosCS19/ML_Toulouse_ENE_2024/main/clase_1_explicacion_train.csv')
@@ -402,7 +402,7 @@ b_1 , b_2, b_3 & : \text{Pendiente de la línea de regresión} \\
 \end{align*}
 """
 
-!curl --output insurance.csv https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/insurance.csv
+#!curl --output insurance.csv https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/insurance.csv
 
 dataset = '/content/insurance.csv'
 
@@ -667,7 +667,7 @@ Esto significa que al aumentar los árboles hay un overfitting y no puede predec
 # Uso de SHAP
 """
 
-!pip install shap
+
 
 import shap
 
